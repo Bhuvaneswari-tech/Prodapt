@@ -1,0 +1,7 @@
+System Log Analysis Report
+--------------------------
+INFO Count: 3
+WARNING Count: 1
+ERROR Count: 2
+
+System Status: Warning
