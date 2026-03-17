@@ -1,0 +1,7 @@
+=== BANKING SYSTEM LOG ===
+Initial Balance: 1000
+Bank error: Withdrawal of 1500 failed. Balance is only 1000.
+Interest Processed: Interest earned: 40.00
+Program continues...
+Account Created: Bob
+Current Account Balance: 2000
