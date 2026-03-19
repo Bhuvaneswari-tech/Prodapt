@@ -7,8 +7,11 @@ def create_user(db, user):
     db.refresh(db_user)
     return db_user
 
-def get_users(db):
-    return db.query(User).all()
+def get_users(db, skip, limit):
+    return db.query(User).offset(skip).limit(limit).all()
+
+def get_user_by_id(db, user_id):
+    return db.query(User).filter(User.id == user_id).first()
     
     
 
