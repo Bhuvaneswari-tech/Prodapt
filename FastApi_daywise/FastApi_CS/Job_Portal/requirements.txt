@@ -3,3 +3,6 @@ sqlalchemy>=2.0
 pydantic
 uvicorn
 dotenv
+pytest
+httpx
+alembic
