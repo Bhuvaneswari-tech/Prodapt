@@ -1,0 +1,11 @@
+Case Study: Student Management Dashboard
+
+Problem Statement
+
+Build a Student Dashboard where:
+
+1. Students are displayed in a list
+2. User can add new students
+3. Each student shows name & marks
+4. Display total number of students
+5. Show a message when students are updated
