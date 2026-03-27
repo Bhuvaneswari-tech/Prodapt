@@ -1,0 +1,11 @@
+# For webhook support
+requests
+fastapi
+sqlalchemy>=2.0
+pydantic
+uvicorn
+dotenv
+pytest
+httpx
+alembic
+pydantic-settings

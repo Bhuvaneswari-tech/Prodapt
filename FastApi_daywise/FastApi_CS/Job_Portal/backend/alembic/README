@@ -1,0 +1,37 @@
+Generic single-database configuration.
+
+rm alembic/versions/*.py
+rm job_portal.db
+alembic revision --autogenerate -m "init tables"
+alembic upgrade head
+
+Alembic helps you manage database changes safely and systematically over time
+
+Problem Without Alembic
+Imagine this situation:
+Day 1:
+class User(Base):
+    name = Column(String)
+Day 10:
+class User(Base):
+    name = Column(String)
+    email = Column(String)
+    
+👉 Now what?
+❌ Your database still doesn’t have email column
+❌ Your app breaks
+❌ You manually alter DB → risky & inconsistent
+
+✅ Solution: Alembic
+Alembic tracks changes like:
+Version 1 → create users table
+Version 2 → add email column
+Version 3 → add jobs table
+👉 It acts like Git for your database
+
+Core Purpose
+Purpose	Explanation
+Version Control	Tracks DB schema changes
+Consistency	Same DB structure across all environments
+Automation	No manual SQL needed
+Rollback	Undo changes safely
